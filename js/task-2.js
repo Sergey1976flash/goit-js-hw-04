@@ -5,12 +5,12 @@ function calcAverageCalories(days) {
 
   let totalCalories = 0;
 
-  // Перебираємо кожен об'єкт у масиві days та додаємо кількість калорій calories до загальної кількості
+  
   for (const day of days) {
       totalCalories += day.calories;
   }
 
-  // Обчислюємо середнє значення кількості калорій
+  
   const averageCalories = totalCalories / days.length;
 
   return averageCalories;
@@ -26,7 +26,7 @@ calcAverageCalories([
   { day: "saturday", calories: 3280 },
   { day: "sunday", calories: 3300 }
 ])
-); // 3180
+); 
 
 console.log(
 calcAverageCalories([
@@ -38,8 +38,8 @@ calcAverageCalories([
   { day: "saturday", calories: 2280 },
   { day: "sunday", calories: 2610 }
 ])
-); // 2270
+); 
 
 console.log(
 calcAverageCalories([])
-); // 0
+); 

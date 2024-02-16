@@ -1,12 +1,12 @@
 function isEnoughCapacity(products, containerSize) {
   let totalProducts = 0;
 
-  // Перебираємо значення (кількість товарів) в об'єкті products і додаємо їх до загальної кількості товарів
+  
   for (const key in products) {
     totalProducts += products[key];
   }
 
-  // Перевіряємо, чи загальна кількість товарів менша або дорівнює containerSize
+  
   return totalProducts <= containerSize;
 }
 
